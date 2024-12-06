@@ -36,3 +36,36 @@ DATA-INGESTION-NLP-PIPELINE/
 ├── main.py                        # Entry point for the project
 ├── README.md                      # Project documentation
 ├── requirements.txt               # Python dependencies
+
+
+How to Run
+
+Set Up Virtual Environment:
+python3 -m venv myeve
+source myeve/bin/activate  # Activate the virtual environment
+Install Dependencies:
+pip install -r requirements.txt
+Run the Project:
+python main.py
+Provide Input:
+When prompted, enter discussion IDs (comma-separated) to fetch data and analyze feedback.
+Example: 59881, 24142, 50011
+Output:
+Sentiment analysis results for each discussion.
+Topic modeling insights for grouped discussions.
+Visualizations: Word clouds and sentiment distribution plots.
+Results
+
+Sentiment Analysis:
+Classified feedback as Positive, Negative, or Neutral.
+Example: Discussion 59881: Positive
+Topic Modeling:
+Identified key discussion themes such as payment issues, feature requests, and new product offerings.
+LLM Router Integration:
+Summarized user feedback into concise insights for actionable decisions.
+Future Enhancements
+
+Implement real-time streaming for continuous data ingestion.
+Integrate additional data sources, such as Google Drive and GitLab.
+Use advanced NLP models (e.g., BERT, DistilBERT) for better accuracy in sentiment analysis and topic modeling.
+Containerize the project using Docker for scalable deployment.
